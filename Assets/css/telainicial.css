@@ -1,83 +1,89 @@
-/* Redefinir básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilo do corpo */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212; /* Fundo preto */
-    color: #e0e0e0; /* Texto claro */
+    background-color: #000;
+    /* Fundo preto */
+    color: #fff;
+    /* Texto branco */
 }
 
-/* Estilo do conteúdo principal */
-.content {
-    padding: 20px;
-    position: relative; /* Necessário para o posicionamento das partículas */
-    z-index: 1; /* Garantir que o conteúdo fique acima das partículas */
+.header {
+    background-color: #28a745;
+    /* Verde */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
 }
 
-/* Menu inferior */
-.navbar {
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3); /* Sombra para o menu */
-}
-
-/* Ícones do menu */
-.btn-icon {
-    color: #e0e0e0;
-    font-size: 1.5rem;
-    transition: transform 0.2s ease, color 0.2s ease; /* Animação ao passar o mouse */
-}
-
-.btn-icon:hover {
-    color: #00ff00; /* Cor verde ao passar o mouse */
-    transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
-}
-
-/* Botão de adicionar */
-.btn-add {
-    width: 60px;
-    height: 60px;
-    font-size: 1.8rem;
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    /* Fundo branco para o avatar */
+    color: #28a745;
+    /* Texto verde para o avatar */
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.3); /* Sombra no botão de adição */
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    margin-right: 10px;
 }
 
-.btn-add:hover {
-    transform: scale(1.15); /* Aumenta o tamanho ao passar o mouse */
-    box-shadow: 0 4px 15px rgba(0, 255, 0, 0.5); /* Sombra mais forte ao passar o mouse */
+.financial-overview,
+.my-cards {
+    background-color: #1c1c1c;
+    /* Fundo escuro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    /* Sombra */
 }
 
-/* Estilo dos botões do menu inferior */
-.navbar .btn {
-    color: #fff;
+.card-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #28a745;
+    /* Verde */
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(11, 1, 1, 0.897);
 }
 
-.navbar .btn:hover {
-    color: #00ff00; /* Muda a cor ao passar o mouse */
+.card-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 24px;
 }
 
-/* Estilo do botão de adição */
-#btnAdicionar {
-    position: relative; /* Para posicionar dentro do menu */
-    z-index: 1001; /* Acima do menu inferior */
+.bottom-menu {
+    height: 65px;
+    /* Altura do menu */
+    background-color: #28a745;
+    /* Verde */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    /* Sombra para destaque */
 }
 
-#meses-dropdown {
-    position: absolute; /* Para sobrepor o conteúdo */
-    background-color: #121212; /* Cor de fundo */
-    border: 1px solid #00ff00; /* Borda verde */
-    border-radius: 5px; /* Bordas arredondadas */
-    z-index: 1000; /* Certifique-se de que fique acima do conteúdo */
-    padding: 10px; /* Espaçamento interno */
+.menu-item {
+    flex: 1;
+    /* Faz o item do menu ocupar espaço igual */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 14px;
+    /* Tamanho da fonte */
 }
 
-.btn-secondary {
-    width: 100%; /* Botões ocupando toda a largura */
-    margin-bottom: 5px; /* Espaço entre os botões */
+.menu-item i {
+    font-size: 24px;
+    /* Tamanho dos ícones */
+}
+
+.add-transaction-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    background-color: #28a745;
+    /* Verde */
+    color: white;
+    border-radius: 50
 }

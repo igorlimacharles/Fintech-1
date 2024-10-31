@@ -1,0 +1,66 @@
+body {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    font-family: 'Arial', sans-serif; /* Tipografia */
+}
+
+.container-fluid {
+    padding: 20px; /* Espaçamento interno */
+}
+
+.goal-definition {
+    padding: 20px; /* Espaçamento interno */
+    background-color: #2c2c2c; /* Fundo escuro */
+}
+
+#goals-list {
+    margin-top: 15px;
+}
+
+.goal-item {
+    margin: 10px 0;
+    padding: 10px; /* Espaçamento interno */
+    background-color: #1c1c1c; /* Fundo escuro */
+    border-radius: 8px; /* Cantos arredondados */
+}
+
+.progress {
+    background-color: #2c2c2c; /* Fundo da barra de progresso */
+}
+
+.performance-chart {
+    padding: 20px; /* Espaçamento interno */
+    background-color: #1c1c1c; /* Fundo escuro */
+}
+.bottom-menu {
+    height: 65px;
+    /* Altura do menu */
+    background-color: #28a745;
+    /* Verde */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    /* Sombra para destaque */
+}
+
+.menu-item {
+    flex: 1;
+    /* Faz o item do menu ocupar espaço igual */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 14px;
+    /* Tamanho da fonte */
+}
+
+.menu-item i {
+    font-size: 24px;
+    /* Tamanho dos ícones */
+}
+
+.add-transaction-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    background-color: #28a745;
+    /* Verde */
+    color: white;
+    border-radius: 50
+}
