@@ -14,12 +14,8 @@ function login() {
     }
 }
 
-function criarConta() {
-    window.location.href = 'cadastro.html'; // Substitua 'pagina_de_login.html' pelo caminho correto da sua página de login
-}
-
-function redefinirSenha() {
-    window.location.href = 'forgotSenha.html'; // Substitua 'pagina_de_login.html' pelo caminho correto da sua página de login
+function voltarParaLogin() {
+    window.location.href = 'login.html'; // Substitua 'pagina_de_login.html' pelo caminho correto da sua página de login
 }
 
 // Inicializa o particles.js

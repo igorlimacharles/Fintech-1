@@ -10,21 +10,22 @@
 </head>
 
 <body 
-    <div class="container-fluid p-3">
-        <div class="header d-flex justify-content-between align-items-center mb-3">
-            <div class="user-info d-flex align-items-center">
-                <div class="avatar">A</div>
-                <span>Olá, Arthur</span>
-            </div>
+<div class="container-fluid p-3">
+    <div class="header d-flex justify-content-between align-items-center mb-3">
+        <div class="user-info d-flex align-items-center">
+            <div class="avatar">A</div>
+                <h1>Olá, Arthur</h1>
             </div>
         </div>
+</div>
 
         
 
         <div class="financial-overview mb-4">
             <div class="overview-header d-flex justify-content-between align-items-center mb-3">
                 <div>
-                    <select id="month-select" class="form-control d-inline-block w-auto" onchange="filterMonth()">
+                    <h1>Resumo</h1>
+                    <select title="month-select" id="month-select" class="form-control d-inline-block w-auto" onchange="filterMonth()">
                         <option value="2024-10">Outubro 2024</option>
                         <option value="2024-09">Setembro 2024</option>
                         <option value="2024-08">Agosto 2024</option>
@@ -83,7 +84,7 @@
                     </div>
                 </div>
                 <div class="card-item bg-success mb-2 p-3">
-                    <div class="card-logo">🔴</div>
+                    <div class="card-logo">🟣</div>
                     <div class="card-info">
                         <strong>Cartão Nubank</strong><br>
                         <span>Limite: R$ 3.000,00</span>
@@ -100,7 +101,7 @@
                 <i class="bi bi-file-earmark-text"></i><br>Transações
             </a>
             <div class="menu-item text-light text-center">
-                <div onclick="toggleAddMenu()" style="cursor: pointer;">
+                <div class="add" onclick="toggleAddMenu()">
                     <i class="bi bi-plus-circle-fill"></i><br>Adicionar
                 </div>
                 <div class="add-dropdown" id="addDropdown">

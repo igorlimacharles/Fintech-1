@@ -1,25 +1,29 @@
-function login() {
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+function cadastrar() {
+    const username = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("senha").value;
 
     // Credenciais corretas
     const usuarioCorreto = "arthur.sidor@gmail.com";
     const senhaCorreta = "teste";
 
     // Verifica se as credenciais estão corretas
-    if (username === usuarioCorreto && password === senhaCorreta) {
-        window.location.href = "telainicial.html"; // Redireciona para a página principal
+    if (username == null || username == "") {
+        alert("O campo 'nome' não pode ser nulo!");
+    } else if (email == null || email == "") {
+        alert("O campo 'email' não pode ser nulo!");
+    } else if (password == null || password == "") {
+        alert("O campo 'senha' não pode ser nulo!");
     } else {
-        alert("Usuário ou senha incorretos!"); // Mensagem de erro
+        alert("Usuário ou senha incorretos!");
     }
+
+    //vai para a tela de login
 }
 
-function criarConta() {
-    window.location.href = 'cadastro.html'; // Substitua 'pagina_de_login.html' pelo caminho correto da sua página de login
-}
-
-function redefinirSenha() {
-    window.location.href = 'forgotSenha.html'; // Substitua 'pagina_de_login.html' pelo caminho correto da sua página de login
+function telaLogin() {
+    // Redireciona para a página de login
+    window.location.href = 'login.html'; // Substitua 'pagina_de_login.html' pelo caminho correto da sua página de login
 }
 
 // Inicializa o particles.js
